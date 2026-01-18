@@ -1,0 +1,244 @@
+/* ------------------------LARGER SCREENS -----------------*/
+/* RESET */
+@media only screen  and (min-width: 608px){
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef6ea;
+  color: #333;
+}
+
+/* HEADER */
+/* HEADER LAYOUT */
+header  {
+  display: block;
+}
+
+/* LOGO + SITE NAME */
+
+header span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* HAMBURGER (hidden on desktop) */
+.hamburger {
+  display: none;
+}
+
+/* NAV BAR */
+.navigation {
+  display: block;
+  background-color: #222;
+  width: 100%;
+  margin: 10px 10px;
+  margin-right: 10px;
+}
+
+/* NAV LIST */
+.navigation ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation li {
+  width: auto;
+  flex: 0 0 auto;
+  border: none;
+}
+
+
+/* NAV LINKS */
+.navigation a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  
+}
+
+.navigation li {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.navigation a {
+  border-bottom: none;
+}
+
+
+/* HOVER EFFECT */
+.navigation li a:hover {
+  background-color: #555;
+}
+
+/* ACTIVE PAGE (Home) */
+.navigation li.current a {
+  background-color: #000;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   ABOUT + PHOTO GRID
+========================= */
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ABOUT SECTION */
+.top-grid {
+  background-color: #ddd;
+}
+
+.top-grid h2 {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.top-grid p {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   STUDENT PHOTO
+========================= */
+.photo {
+  background-color: #ddd;
+}
+
+.photo h2 {
+  background-color: #222;
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem;
+  margin: -0.5rem 0 0 0;
+}
+
+
+.photo img {
+  display: block;
+
+}
+
+/* =========================
+   COURSES SECTION
+========================= */
+.courses {
+  margin-top: 1.5rem;
+}
+
+.courses h2 {
+  background-color: #222;
+  color: #fff;
+  padding: 0.40rem;
+  text-align: center;
+}
+
+/* FILTER BUTTONS */
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  gap: 1rem;
+  margin: 1rem 0;
+  
+}
+
+.filter {
+  flex: 1;
+  padding: 0.40rem;
+  background-color: #ddd;
+  border: 1px solid #777;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter:hover {
+  background-color: #bbb;
+}
+
+/* COURSE BOXES */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 1rem 1rem;
+  padding: 0 1rem 1rem;
+  margin: 0 auto;
+}
+
+.course {
+  background-color: #eee;
+  border: 1px solid #777;
+  box-sizing: border-box;
+  color: #777;
+  padding: 0.30rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* CREDIT TEXT */
+.credits {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+.copy-right  {
+    max-width: 100%;
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.course-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--card-bg, #f5f5f5);
+  border-left: 5px solid #999;
+}
+
+.course-card.completed {
+  background-color: #e6f4ea;      /* soft complementary green */
+  border-left: 5px solid #2e7d32; /* clear completion indicator */
+}
+
+
+  
+}
+
+
+

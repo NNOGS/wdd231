@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <meta name="description" content="This is Obinna Godswill Sosthenes Njoku's personal resume website showcasing my background, skills, and projects.">
+    <meta name="author" content="Obinna Godswill Sosthenes Njoku">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+      <div class="header-container">
+         <img src="images/logo.svg" alt="WDD231 Logo" width="204" height="204">
+        <span>NNOGS Site</span>
+      </div>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li> 
+            </ul>   
+        </nav>
+    </header>
+    
+      <!-- MAIN CONTENT -->
+  <main class="container">
+    <h1>Home</h1>
+
+    
+      <article class="about">
+        <section class="top-grid">
+        <h2>About Me</h2>
+        <p>
+          My name is Obinna Godswill Sosthenes Njoku.
+            I am a student at BYU-Idaho studying Computer Science.
+             I am passionate about technology and software development.
+            I hail from Owerri, the capital city of Imo state in Nigeria.
+            I am the first child of my parents and the first to join the church.
+            After I joined the church, I became a dedicated member of the congregation.
+            I have been ever since, but haven't found a companion yet to be exalted with.
+        </p>
+      </section>
+
+      <section>
+      <aside class="photo">
+        <h2>Student Photo</h2>
+        <img src="images/N_Passport .jpg" alt="Student Photo" width="150" height="200">
+      </aside>
+    </section>
+  </article>
+
+         <section class="courses">
+      <h2>Web Certificate Courses</h2>
+
+      <div class="filters">
+        <button class="filter" id="filter-all">All</button>
+        <button class="filter" id="filter-cse">CSE</button>
+        <button class="filter" id="filter-wdd">WDD</button>
+      </div>
+
+      <div class="course-grid" id="course-grid"></div>
+        
+      
+
+      <p class="credits">
+        The total credits for course listed above is 
+        <span id="total-credits">0</span> 
+      </p>
+    </section>
+  
+        
+    
+         <div class="social">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank"><img src="images/facebook (1).svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/NNOGS?tab=repositories" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://x.com/s_godswill7424" target="_blank"><img src="images/twitter-x.svg" alt="X" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/nnogs/?trk=opento_sprofile_details" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+        </div>
+        </main>
+        <footer>  
+        <div class="copy-right">
+  <p>&copy; 2026 • Obinna Godswill Sosthenes Njoku • Imo, Nigeria</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</div>
+    </footer>
+    
+</body>
+</html>
