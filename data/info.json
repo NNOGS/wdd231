@@ -1,0 +1,23 @@
+{
+    "familyName": "Njoku",
+    "dateMovedIn": "2023-09-15",
+    "numberofRecords": 3,
+    "visitedbyBishop": true,
+    "individualFamilyData": [
+        {
+            "name": "Obi",
+            "gender": "male",
+            "birthDate": "2000-05-20"
+        },
+        {
+            "name": "Chima",
+            "gender": "male",
+            "birthDate": "2004-11-30"
+        },
+        {
+            "name": "Amaka",
+            "gender": "female",
+            "birthDate": "2002-08-15"
+        }
+    ]
+}
