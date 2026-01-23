@@ -1,0 +1,293 @@
+/*-----------------------color scheme-----------------------
+terra cotta: #E07B5C
+deep slate blue: #3D405B
+*/
+/* ----------------------------SITE WIDTH-------------------- */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, "josefin sans";
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+/* -----------------------------HEADER----------------------------- */
+header {
+    display: grid;
+    grid-template-columns: auto 44px;
+
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    column-gap: 8px;
+    align-items: end;
+}
+
+
+.header-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/* -------------HAMBURGER NAVIGATION------------- */
+/* ------------- HAMBURGER BUTTON ------------- */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3D405B;
+    font-size: 2rem;
+}
+
+/* ☰ icon */
+.hamburger::before {
+    content: "\2630";
+}
+
+/* X icon when open */
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* ------------- NAVIGATION ------------- */
+.navigation {
+    display: none; /* hidden by default */
+    background-color: #2f2f2f;
+}
+
+/* show menu when toggled */
+.navigation.show {
+    display: block;
+}
+
+/* remove bullets */
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    width: 100%;
+}
+/* nav links */
+.navigation a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* active page */
+.navigation li.current a {
+    background-color: #555;
+    
+}
+
+/* hover */
+.navigation a:hover {
+    background-color: #888;
+}
+
+/*  -------main----------- */
+
+.d-list {
+    border-radius: 5px;
+    margin: 0 0 10px 10px;
+    padding: 5px;
+}
+
+
+
+.d-list:hover {
+    background-color: #a9afe4;
+}
+
+/* DIRECTORY VIEW STYLES */
+.d-detail.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.d-detail.grid section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.d-detail.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-detail.list section {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.d-detail img {
+  width: 100%;
+  max-width: 150px;
+  height: 100px;
+}
+
+/* ---------- SPOTLIGHTS ---------- */
+.spotlights {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 100px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge.gold {
+  background-color: #f5c542;
+  color: #2d2d2d;
+}
+
+.badge.silver {
+  background-color: #cfd8dc;
+  color: #263238;
+}
+
+.badge.basic {
+  background-color: #e0e0e0;
+  color: #424242;
+}
+
+.list-view .badge {
+  display: none;
+}
+
+
+main {
+    margin: 10px;
+}
+
+main h1 {
+    margin: 0 0 10px 10px;
+}
+
+/* ---------- MEMBER CARDS ---------- */
+.member-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+  max-width: 100px;
+  height: 80px;
+  margin: 0 auto 0.5rem;
+  display: block;
+}
+
+.member-card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.member-card p {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+/* ---------- LIST VIEW ADJUSTMENTS ---------- */
+.d-detail.list .member-card {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #775d5d;
+}
+/* Hide images in LIST view */
+.d-detail.list img {
+  display: none;
+}
+
+
+/* -----------------Footer----------------------- */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: whitesmoke;
+    border: 1px solid #845c9b;
+    background-color: #9b66b9;
+    padding: 1rem;
+    margin-top: 5px;
+    
+}
+
+
+
+.socialmedia {
+    display: flex;
+    padding: 10px;
+    column-gap: 8px;
+}
+.socialmedia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+
+    
+}
+.socialmedia img {
+    width: 22px;
+    height: 22px;
+}
+.socialmedia a:hover{
+    background-color: #ddd;
+}

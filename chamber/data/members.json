@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "NNOGS Tech Solutions",
+      "address": "12 Market Road, Enugu, Nigeria",
+      "phone": "+234 803 111 2222",
+      "website": "https://www.nnogstech.com",
+      "image": "nnogs-tech.png",
+      "membershipLevel": 3,
+      "description": "A technology company specializing in web development and IT consulting."
+    },
+    {
+      "name": "Coal City Foods",
+      "address": "45 Independence Avenue, Enugu, Nigeria",
+      "phone": "+234 806 333 4444",
+      "website": "https://www.coalcityfoods.com",
+      "image": "coal-city-foods.png",
+      "membershipLevel": 2,
+      "description": "A local food processing and catering company."
+    },
+    {
+      "name": "Eastern Builders Ltd",
+      "address": "7 Agbani Road, Enugu, Nigeria",
+      "phone": "+234 809 555 6666",
+      "website": "https://www.easternbuilders.com",
+      "image": "eastern-builders.png",
+      "membershipLevel": 3,
+      "description": "Construction and real estate development services."
+    },
+    {
+      "name": "Lion Heart Pharmacy",
+      "address": "22 Zik Avenue, Enugu, Nigeria",
+      "phone": "+234 812 777 8888",
+      "website": "https://www.lionheartpharmacy.com",
+      "image": "lion-heart-pharmacy.png",
+      "membershipLevel": 1,
+      "description": "Retail pharmacy providing affordable healthcare products."
+    },
+    {
+      "name": "Green Fields Agro",
+      "address": "Farm Settlement, Nsukka, Enugu State",
+      "phone": "+234 815 999 0000",
+      "website": "https://www.greenfieldsagro.com",
+      "image": "green-fields-agro.png",
+      "membershipLevel": 2,
+      "description": "Agricultural production and food supply company."
+    },
+    {
+      "name": "Sunrise Media House",
+      "address": "10 Garden Avenue, Enugu, Nigeria",
+      "phone": "+234 818 222 3333",
+      "website": "https://www.sunrisemedia.com",
+      "image": "sunrise-media.png",
+      "membershipLevel": 1,
+      "description": "Media, branding, and digital marketing agency."
+    },
+    {
+      "name": "Unity Microfinance Bank",
+      "address": "5 Bank Lane, Enugu, Nigeria",
+      "phone": "+234 814 444 5555",
+      "website": "https://www.unitymfb.com",
+      "image": "unity-mfb.png",
+      "membershipLevel": 3,
+      "description": "Microfinance bank supporting small and medium businesses."
+    }
+  ]
+}

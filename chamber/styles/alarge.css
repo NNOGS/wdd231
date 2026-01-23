@@ -1,0 +1,135 @@
+/* ------------------------LARGER SCREENS -----------------*/
+/* RESET */
+@media only screen  and (min-width: 608px){
+  
+
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef6ea;
+  color: #333;
+}
+
+/* HEADER */
+/* HEADER LAYOUT */
+header  {
+  display: flex;
+  align-items: center;       /* vertical alignment */
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* LOGO + SITE NAME */
+
+header span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.header-container span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  white-space: nowrap;     /* prevents text from breaking into multiple lines */
+  border: none;
+}
+/* HAMBURGER (hidden on desktop) */
+.hamburger {
+  display: none;
+}
+
+.navigation a {
+  color: #512769;
+  font-size: large;
+  font-weight: bold;
+}
+/* NAV BAR */
+.navigation {
+  display: block;
+  background-color: transparent !important;
+  border: none !important;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  width: 100%;
+  margin: 10px 10px;
+  margin-right: 10px;
+}
+
+/* NAV LIST */
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navigation li {
+  width: auto;
+  flex: 0 0 auto;
+  border: none;
+}
+
+
+/* NAV LINKS */
+
+
+/* HOVER EFFECT */
+.navigation a:hover {
+  background-color: #555;
+  color: #fff; /* make text readable on hover */
+  border-radius: 4px; /* optional rounded hover */
+}
+
+/* ACTIVE PAGE (Home) */
+.navigation li.current a {
+   background-color: transparent; /* no background */
+  font-weight: bold;             /* highlight current page */
+  color: #795050;                   /* or whate */
+}
+
+.d-detail.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .d-detail.list section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+   #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .d-detail.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .d-detail.list .member-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .d-detail.list img {
+    max-width: 140px;
+  }
+  footer{
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    border: 1px solid #845c9b;
+    background-color: #9b66b9;
+    padding: 1rem;
+    margin-top: 5px;
+    }
+
+.socialmedia a {
+    margin-top: 1rem;
+  
+}
+
+.socialmedia a{
+  width: 80px;
+  height: 80px;
+}
+}
