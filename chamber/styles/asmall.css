@@ -274,7 +274,11 @@ main h1 {
   gap: 1rem;
   padding: 1rem;
 }
-
+.choice {
+  background-color: #6a916a70;
+  max-width: fit-content;
+  border-radius: 8px;
+}
 .events {
   background-color: #6a916a70;
   border-radius: 8px;

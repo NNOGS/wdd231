@@ -91,6 +91,11 @@ header span {
     
   }
 
+.choice {
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 5rem;
+}
 .events {
   background-color: #6a916a70;
   border-radius: 8px;
