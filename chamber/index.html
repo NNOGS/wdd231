@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/asmall.css">
     <link rel="stylesheet" href="styles/alarge.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/dir.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
 <header>
@@ -33,28 +33,55 @@
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="directory.html" aria-current="page">Directory</a></li>
+            <li class="current"><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#">Join</a></li> 
             <li><a href="#">Discover</a> </li>
             </ul>   
         </nav>
 </header>
-<main>
-    <h1>Business Directory</h1>
+<main class="before-hero">
+<section class="hero">
+  <img src="images/hero.svg"
+       alt="City skyline representing the Chamber of Commerce">
 
-     <section class="spotlights">
+  <a href="join.html" class="cta">Join the Chamber</a>
+</section>
+
+  <!-- EVENTS -->
+  <section class="events">
+    <h2>Current Events</h2>
+    <ul>
+      <li>Business Networking Night – Feb 15</li>
+      <li>Startup Workshop – Feb 22</li>
+      <li>Community Trade Fair – March 3</li>
+    </ul>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="weather">
+    <h2>Weather</h2>
+
+    <p>
+      <span id="current-temp"></span>
+      <img id="weather-icon" alt="">
+    </p>
+    <figcaption></figcaption>
+
+    <div class="forecast">
+      <p><strong>Day 1:</strong> <span id="day1"></span></p>
+      <p><strong>Day 2:</strong> <span id="day2"></span></p>
+      <p><strong>Day 3:</strong> <span id="day3"></span></p>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHTS -->
+  <section class="spotlights">
     <h2>Member Spotlights</h2>
     <div id="spotlight-container"></div>
   </section>
-  
-    <button id="d-btn" class="d-list" aria-label="Toggle directory view">View Directory in list</button>
-
-    <div class="d-detail grid" id="d-card" role="region" aria-live="polite"></div>
-    
 
 </main>
-
 <footer>
     <div class="info">
    <p>Enugu Chamber of Commerce<br>

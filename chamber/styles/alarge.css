@@ -86,6 +86,33 @@ header span {
   color: #795050;                   /* or whate */
 }
 
+.hero img  {
+    display: block;
+    
+  }
+
+.events {
+  background-color: #6a916a70;
+  border-radius: 8px;
+  max-width: fit-content;
+  padding: 3rem;
+  margin-top: 3rem;
+}  
+
+.weather {
+   float: right;
+   margin-top: -16rem;
+}
+  
+
+  #spotlight-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  
+
 .d-detail.grid {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -1,0 +1,29 @@
+.card {
+    border: 1px solid #5d6f67;
+    background-color: #f6f0da;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.card  {
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+#weather-icon  {
+    color: goldenrod;
+}
+
+figure {
+    text-transform: capitalize;
+    color: darkolivegreen;
+    margin: .3rem 0;
+
+}
+
+.card #current-temp {
+    font-size: 2rem;
+    color: darkolivegreen;
+    margin: .3rem 0;
+}
