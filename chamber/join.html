@@ -43,10 +43,158 @@
         </nav>
 </header>
 
-    <main>
+<main>
+
+ <h1>Join the Chamber</h1>
+
+  <div class="join-container">
+        
+  <form method="get" action="thankyou.html" class="join-form">
+
+    <!-- First Name -->
+    <label>
+      First Name
+      <input type="text" name="first" required
+        title="Enter your first name"
+        autocomplete="given-name">
+    </label>
+
+    <!-- Last Name -->
+    <label>
+      Last Name
+      <input type="text" name="last" required
+        title="Enter your last name"
+        autocomplete="family-name">
+    </label>
+
+    <!-- Organizational Title -->
+    <label>
+      Your Title
+      <input type="text" name="orgtitle"
+        title="Your organizational title"
+        autocomplete="organization-title"
+        pattern="[A-Za-z\s\-]{7,}">
+    </label>
+
+    <!-- Email -->
+    <label>
+      Email
+      <input type="email" name="email" required
+        title="Enter your email"
+        placeholder="example@email.com"
+        autocomplete="email">
+    </label>
+
+    <!-- Phone -->
+    <label>
+      Mobile Phone
+      <input type="tel" name="phone" required
+        title="Enter your mobile phone"
+        autocomplete="tel">
+    </label>
+
+    <!-- Business Name -->
+    <label>
+      Business Name
+      <input type="text" name="business" required
+        title="Enter your business name"
+        autocomplete="organization">
+    </label>
+
+        <label>
+      Membership Level
+      <select name="membership" required>
+        <option value="">Select one</option>
+        <option value="np">NP Membership</option>
+        <option value="bronze">Bronze Membership</option>
+        <option value="silver">Silver Membership</option>
+        <option value="gold">Gold Membership</option>
+      </select>
+    </label>
 
 
-    </main>
+        <label>
+      Business Description
+      <textarea name="description" required
+        title="Describe your organization"></textarea>
+    </label>
+
+    <!-- hidden timestamp field -->
+       <input type="hidden" id="timestamp" name="timestamp">
+
+     <!-- Submition button    -->
+      <input type="submit" value="Apply for Membership">
+    
+</form>
+
+    <section class="membership-cards">
+
+  <div class="card">
+    <h3>NP Membership</h3>
+    <p>Free for non-profits.</p>
+    <button onclick="npModal.showModal()">Learn More</button>
+  </div>
+
+  <div class="card">
+    <h3>Bronze Membership</h3>
+    <p>Basic business visibility.</p>
+    <button onclick="bronzeModal.showModal()">Learn More</button>
+  </div>
+
+  <div class="card">
+    <h3>Silver Membership</h3>
+    <p>Includes training and events.</p>
+    <button onclick="silverModal.showModal()">Learn More</button>
+  </div>
+
+  <div class="card">
+    <h3>Gold Membership</h3>
+    <p>Premium advertising benefits.</p>
+    <button onclick="goldModal.showModal()">Learn More</button>
+  </div>
+
+</section>
+</div>
+</main>
+
+<dialog id="npModal">
+  <h3>NP Membership Benefits</h3>
+  <ul>
+    <li>No membership fee</li>
+    <li>Community events access</li>
+  </ul>
+  <button onclick="npModal.close()">Close</button>
+</dialog>
+
+<dialog id="bronzeModal">
+  <h3>Bronze Membership Benefits</h3>
+  <ul>
+    <li>No membership fee with Business Listing</li>
+    <li>Community events access and Networking Events</li>
+    <li>Commerce Related Access Loans</li>
+  </ul>
+  <button onclick="bronzeModal.close()">Close</button>
+</dialog>
+
+<dialog id="silverModal">
+  <h3>Silver Membership Benefits</h3>
+  <ul>
+    <li>No membership fee and a training access</li>
+    <li>Community events access with a discount</li>
+    <li>Commerce Related Access Loan with a repayment discount of 50%</li>
+  </ul>
+  <button onclick="silverModal.close()">Close</button>
+</dialog>
+
+<dialog id="goldModal">
+  <h3>Gold Membership Benefits</h3>
+  <ul>
+    <li>No membership fee and a homepage spotlight</li>
+    <li>Community events accesswith premium advertising </li>
+    <li>Commerce Related Access Loans with a repayment discount of 80%</li>
+  </ul>
+  <button onclick="goldModal.close()">Close</button>
+</dialog>
 
     <footer>
     <div class="info">

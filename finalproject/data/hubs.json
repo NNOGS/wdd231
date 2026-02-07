@@ -1,0 +1,154 @@
+{
+  "hubs": [
+    {
+      "name": "CcHub",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "focus": "Fintech & Innovation",
+      "founded": 2010,
+      "description": "One of Africa’s leading innovation hubs supporting startups and entrepreneurs.",
+      "website": "https://cchub.africa",
+      "image": "images/cchub.jpg"
+    },
+    {
+      "name": "iHub",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "focus": "Technology & Research",
+      "founded": 2010,
+      "description": "A pioneering innovation hub supporting the Kenyan tech ecosystem.",
+      "website": "https://ihub.co.ke",
+      "image": "images/ihub.jpg"
+    },
+    {
+      "name": "MEST",
+      "city": "Accra",
+      "country": "Ghana",
+      "focus": "Startup Incubation",
+      "founded": 2008,
+      "description": "An incubator providing training and funding to tech entrepreneurs.",
+      "website": "https://meltwater.org",
+      "image": "images/mest.jpg"
+    },
+    {
+      "name": "Co-Creation Hub Kigali",
+      "city": "Kigali",
+      "country": "Rwanda",
+      "focus": "Digital Innovation",
+      "founded": 2016,
+      "description": "Supporting digital startups and social innovation in Rwanda.",
+      "website": "https://cchub.africa",
+      "image": "images/cchub-kigali.jpg"
+    },
+    {
+      "name": "Silicon Cape",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "focus": "Startup Ecosystem",
+      "founded": 2009,
+      "description": "A network promoting the Western Cape tech ecosystem.",
+      "website": "https://siliconcape.org.za",
+      "image": "images/siliconcape.jpg"
+    },
+    {
+      "name": "Flat6Labs",
+      "city": "Cairo",
+      "country": "Egypt",
+      "focus": "Accelerator",
+      "founded": 2011,
+      "description": "A leading startup accelerator in the MENA region.",
+      "website": "https://flat6labs.com",
+      "image": "images/flat6labs.jpg"
+    },
+    {
+      "name": "Innovation Hub",
+      "city": "Pretoria",
+      "country": "South Africa",
+      "focus": "Tech & Research",
+      "founded": 2010,
+      "description": "Africa’s first internationally accredited science park.",
+      "website": "https://theinnovationhub.com",
+      "image": "images/innovationhub.jpg"
+    },
+    {
+      "name": "BongoHive",
+      "city": "Lusaka",
+      "country": "Zambia",
+      "focus": "Startup Support",
+      "founded": 2011,
+      "description": "Supporting local entrepreneurs through training and mentorship.",
+      "website": "https://bongohive.co.zm",
+      "image": "images/bongohive.jpg"
+    },
+    {
+      "name": "ActivSpaces",
+      "city": "Douala",
+      "country": "Cameroon",
+      "focus": "Tech Community",
+      "founded": 2010,
+      "description": "Community-based tech hub empowering innovators.",
+      "website": "https://activspaces.com",
+      "image": "images/activspaces.jpg"
+    },
+    {
+      "name": "Outbox Hub",
+      "city": "Kampala",
+      "country": "Uganda",
+      "focus": "Entrepreneurship",
+      "founded": 2012,
+      "description": "Supporting Ugandan startups and innovators.",
+      "website": "https://outbox.co.ug",
+      "image": "images/outbox.jpg"
+    },
+    {
+      "name": "Wennovation Hub",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "focus": "Startup Acceleration",
+      "founded": 2014,
+      "description": "Helping startups scale through mentorship and funding.",
+      "website": "https://wennovationhub.com",
+      "image": "images/wennovation.jpg"
+    },
+    {
+      "name": "xHub Addis",
+      "city": "Addis Ababa",
+      "country": "Ethiopia",
+      "focus": "Innovation",
+      "founded": 2015,
+      "description": "Community hub fostering tech innovation.",
+      "website": "https://xhubaddis.com",
+      "image": "images/xhub.jpg"
+    },
+    {
+      "name": "Hive Colab",
+      "city": "Kampala",
+      "country": "Uganda",
+      "focus": "Co-working",
+      "founded": 2010,
+      "description": "A collaborative space for tech entrepreneurs.",
+      "website": "https://hivecolab.com",
+      "image": "images/hivecolab.jpg"
+    },
+    {
+      "name": "Orange Digital Center",
+      "city": "Dakar",
+      "country": "Senegal",
+      "focus": "Digital Skills",
+      "founded": 2019,
+      "description": "Supporting digital transformation and skills training.",
+      "website": "https://www.orange.com",
+      "image": "images/orange-digital.jpg"
+    },
+    {
+      "name": "Impact Hub",
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "focus": "Social Innovation",
+      "founded": 2013,
+      "description": "Supporting impact-driven startups.",
+      "website": "https://impacthub.net",
+      "image": "images/impacthub.jpg"
+    }
+  ]
+}
