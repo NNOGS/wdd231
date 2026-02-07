@@ -373,6 +373,12 @@ figcaption {
   }
 }
 
+#results {
+  border: 1px solid #775d5d;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #a9afe4;
+}
 
 /* -----------------Footer----------------------- */
 

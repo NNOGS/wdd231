@@ -132,25 +132,25 @@
   <div class="card">
     <h3>NP Membership</h3>
     <p>Free for non-profits.</p>
-    <button onclick="npModal.showModal()">Learn More</button>
+    <button class="open-modal" data-modal="npModal">Learn More</button>
   </div>
 
   <div class="card">
     <h3>Bronze Membership</h3>
     <p>Basic business visibility.</p>
-    <button onclick="bronzeModal.showModal()">Learn More</button>
+    <button class="open-modal" data-modal="bronzeModal">Learn More</button>
   </div>
 
   <div class="card">
     <h3>Silver Membership</h3>
     <p>Includes training and events.</p>
-    <button onclick="silverModal.showModal()">Learn More</button>
+    <button class="open-modal" data-modal="silverModal">Learn More</button>
   </div>
 
   <div class="card">
     <h3>Gold Membership</h3>
     <p>Premium advertising benefits.</p>
-    <button onclick="goldModal.showModal()">Learn More</button>
+    <button class="open-modal" data-modal="goldModal">Learn More</button>
   </div>
 
 </section>
@@ -163,7 +163,7 @@
     <li>No membership fee</li>
     <li>Community events access</li>
   </ul>
-  <button onclick="npModal.close()">Close</button>
+  <button class="close-modal">Close</button>
 </dialog>
 
 <dialog id="bronzeModal">
@@ -173,7 +173,7 @@
     <li>Community events access and Networking Events</li>
     <li>Commerce Related Access Loans</li>
   </ul>
-  <button onclick="bronzeModal.close()">Close</button>
+  <button class="close-modal">Close</button>
 </dialog>
 
 <dialog id="silverModal">
@@ -183,7 +183,7 @@
     <li>Community events access with a discount</li>
     <li>Commerce Related Access Loan with a repayment discount of 50%</li>
   </ul>
-  <button onclick="silverModal.close()">Close</button>
+  <button class="close-modal">Close</button>
 </dialog>
 
 <dialog id="goldModal">
@@ -193,7 +193,7 @@
     <li>Community events accesswith premium advertising </li>
     <li>Commerce Related Access Loans with a repayment discount of 80%</li>
   </ul>
-  <button onclick="goldModal.close()">Close</button>
+  <button class="close-modal">Close</button>
 </dialog>
 
     <footer>
