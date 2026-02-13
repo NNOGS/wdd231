@@ -1,0 +1,19 @@
+@media (min-width: 641px) {
+
+
+  #discover-container .card {
+    grid-template-areas:
+      "pic name"
+      "pic address"
+      "pic description";
+    align-items: start;
+  }
+
+  #discover-container .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+

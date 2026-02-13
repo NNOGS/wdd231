@@ -1,5 +1,5 @@
 /* ------------------------ LARGER SCREENS ----------------- */
-@media only screen and (min-width: 608px) {
+@media only screen and (min-width: 1025px) {
 
   /* BASE */
   body {
@@ -134,7 +134,11 @@
     gap: 1rem;
   }
 
-  
+  #discover-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+  }
 
 
   /* FOOTER */
