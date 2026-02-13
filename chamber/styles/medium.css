@@ -13,6 +13,16 @@
     width: 100%;
     height: auto;
   }
+
+ .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+
 }
 
 

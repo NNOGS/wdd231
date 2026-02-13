@@ -412,6 +412,9 @@ figcaption {
   grid-area: description;
 }
 
+.card img {
+  transition: none;
+}
 
 
 /* -----------------Footer----------------------- */
