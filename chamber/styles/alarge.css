@@ -145,7 +145,7 @@
   footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    color: white;
+    color: rgb(0, 0, 0);
     border: 1px solid #845c9b;
     background-color: #9b66b9;
     padding: 1rem;

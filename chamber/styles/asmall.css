@@ -423,7 +423,8 @@ figcaption {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    color: whitesmoke;
+    color: #000;
+    font-weight: bold;
     border: 1px solid #845c9b;
     background-color: #9b66b9;
     padding: 1rem;
