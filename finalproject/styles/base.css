@@ -100,6 +100,19 @@
     font-size: large;
 }
 
+.home-feature img {
+  display: block;
+  width: 550px;
+  height: 270px;
+}
+
+.home-feature h2 {
+  margin-top: 2rem;
+}
+
+.home-feature p {
+  font-size: large;
+}
 /* -----hub's page---------------- */
 
 #hubsContainer .card {
@@ -238,6 +251,71 @@
     padding: 0.5rem;
     
 }
+
+/* -------------------Contact Us Page----------- */
+.contact-container {
+      background-color: #ffffff;
+      padding: 2.5rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
+      width: 70%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-container:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    /* --- Form Fields --- */
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      border-color: #4f46e5; /* Indigo accent */
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+      outline: none;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* --- Submit Button --- */
+    form button {
+      background-color: #4f46e5;
+      color: #ffffff;
+      font-weight: 600;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    form button:hover {
+      background-color: #3730a3;
+      transform: translateY(-2px);
+    }
 
 @media (min-width: 48rem) {
     .site-header {
