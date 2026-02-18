@@ -1,0 +1,122 @@
+<svg width="100%" height="50" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">NNOGS African Tech Hubs Interactive Banner</title>
+  <desc id="desc">Interactive animated header with pulsing, floating tech nodes, twinkling micro nodes, auto dark/light mode</desc>
+
+  <defs>
+    <!-- Background gradients -->
+    <linearGradient id="bgDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"></stop>
+      <stop offset="100%" stop-color="#1e293b"></stop>
+    </linearGradient>
+    <linearGradient id="bgLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"></stop>
+      <stop offset="100%" stop-color="#e2e8f0"></stop>
+    </linearGradient>
+
+    <!-- Accent gradients -->
+    <linearGradient id="accentDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"></stop>
+      <stop offset="50%" stop-color="#eab308"></stop>
+      <stop offset="100%" stop-color="#22c55e"></stop>
+    </linearGradient>
+    <linearGradient id="accentLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"></stop>
+      <stop offset="50%" stop-color="#facc15"></stop>
+      <stop offset="100%" stop-color="#16a34a"></stop>
+    </linearGradient>
+
+    <!-- Glow filter for hover -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- CSS for auto dark/light mode and hover -->
+    <style>
+      .dark-bg { fill: url(#bgDark); }
+      .light-bg { fill: url(#bgLight); }
+      .dark-title { fill: white; }
+      .light-title { fill: #0f172a; }
+      .dark-accent { fill: url(#accentDark); }
+      .light-accent { fill: url(#accentLight); }
+
+      .node { transition: filter 0.3s; }
+      svg:hover .node { filter: url(#glow); }
+
+      @media (prefers-color-scheme: dark) {
+        .dark-bg { display: block; }
+        .light-bg { display: none; }
+        .dark-title, .dark-accent { display: block; }
+        .light-title, .light-accent { display: none; }
+      }
+      @media (prefers-color-scheme: light) {
+        .dark-bg { display: none; }
+        .light-bg { display: block; }
+        .dark-title, .dark-accent { display: none; }
+        .light-title, .light-accent { display: block; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background rectangles -->
+  <rect width="1200" height="220" class="dark-bg"></rect>
+  <rect width="1200" height="220" class="light-bg"></rect>
+
+  <!-- Main tech nodes -->
+  <circle class="node" cx="100" cy="110" r="55" fill="none" stroke="#22c55e" stroke-width="3" opacity="0.4">
+    <animate attributeName="r" values="55;60;55" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeName="cy" values="110;120;110" dur="6s" repeatCount="indefinite"></animate>
+    <animate attributeName="cx" values="100;120;100" dur="8s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.4;0.6;0.4" dur="4s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <circle class="node" cx="1100" cy="60" r="45" fill="none" stroke="#f97316" stroke-width="3" opacity="0.4">
+    <animate attributeName="r" values="45;50;45" dur="5s" repeatCount="indefinite"></animate>
+    <animate attributeName="cy" values="60;50;60" dur="7s" repeatCount="indefinite"></animate>
+    <animate attributeName="cx" values="1100;1080;1100" dur="9s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <circle class="node" cx="950" cy="170" r="25" fill="#22c55e" opacity="0.25">
+    <animate attributeName="r" values="25;30;25" dur="3s" repeatCount="indefinite"></animate>
+    <animate attributeName="cy" values="170;180;170" dur="4s" repeatCount="indefinite"></animate>
+    <animate attributeName="cx" values="950;970;950" dur="6s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.25;0.5;0.25" dur="3s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- Micro nodes -->
+  <circle class="node" cx="300" cy="50" r="6" fill="#22c55e" opacity="0.15">
+    <animate attributeName="cx" values="300;310;300" dur="6s" repeatCount="indefinite"></animate>
+    <animate attributeName="cy" values="50;55;50" dur="5s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.15;0.25;0.15" dur="3s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <circle class="node" cx="500" cy="120" r="5" fill="#f97316" opacity="0.12">
+    <animate attributeName="cx" values="500;510;500" dur="7s" repeatCount="indefinite"></animate>
+    <animate attributeName="cy" values="120;125;120" dur="6s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.12;0.22;0.12" dur="4s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <circle class="node" cx="800" cy="80" r="4" fill="#22c55e" opacity="0.1">
+    <animate attributeName="cx" values="800;790;800" dur="8s" repeatCount="indefinite"></animate>
+    <animate attributeName="cy" values="80;85;80" dur="7s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="5s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- Connecting lines -->
+  <line x1="100" y1="110" x2="280" y2="110" stroke="#22c55e" stroke-width="2" opacity="0.5"></line>
+  <line x1="900" y1="170" x2="1100" y2="60" stroke="#f97316" stroke-width="2" opacity="0.5"></line>
+
+  <!-- Main Title -->
+  <text x="50%" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" class="dark-title light-title">
+    NNOGS African Tech Hubs
+  </text>
+
+  <!-- Subtitle -->
+  <text x="50%" y="140" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" class="dark-accent light-accent">
+    Innovation • Collaboration • Growth
+  </text>
+</svg>

@@ -1,0 +1,282 @@
+/* -------------------Body-------------- */
+* {
+  margin: 2px;
+}
+
+/* -------------Header----------------------------- */
+
+.navigation {
+    display: none;             /* hidden by default */
+    position: absolute;        /* overlay menu */
+    top: 100%;                 /* below header */
+    right: 0;
+    background-color: #fff;
+    width: 200px;              /* adjust menu width */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+ 
+.navigation.show {
+    display: block !important;
+
+}
+
+.menu-butt::before {
+    content: "☰";
+
+}
+
+.menu-butt.show::before{
+    content: "X";
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 3rem;  
+    width: auto;
+}
+.head-banner {
+     flex: 1;                 
+    text-align: center;      
+    margin: 0;        
+    
+    
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 0.5rem 1rem;  
+    position: relative;         
+}
+
+.menu-butt {
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------Home Page// main / hero------------- */
+
+.hero img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.hero-statement {
+    margin-top: -10rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    color: white
+}
+
+.hero p {
+    font-size: larger;
+    font-weight: bolder;
+}
+/* --------------Main / Overview & Map-section ---------------- */
+.overview, .map-section {
+    display: block;
+    
+}
+.overview, .map-section h2 {
+    margin-top: 2rem;
+}
+.map-section img {
+    width: 550px;
+    height: 270px;
+}
+.overview, .map-section  p {
+    font-size: large;
+}
+
+/* -----hub's page---------------- */
+
+#hubsContainer .card {
+  background-color: #bca9c7;
+  border: 1px solid #a9afe4;
+  border-radius: 8px;
+  padding: 1rem;
+  gap: 0.2rem;
+
+  display: grid;
+  grid-template-areas:
+  "pic"
+  "name"
+    "city" "country"
+    "focus"
+    "details";
+}
+
+#hubsContainer .card .hub img {
+  grid-area: pic;
+}
+
+#hubsContainer .card .hub h3 {
+  grid-area: pic;
+  width: 100%;
+}
+
+#hubsContainer .card .hub p {
+  grid-area: city, country;
+}
+
+#hubsContainer .card .hub p {
+  grid-area: focus;
+}
+
+.grid {
+    display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 1rem 0;
+}
+
+.card {
+     background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card button.details {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #0077cc;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.card button.details:hover {
+  background: #005fa3;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.modal a.modal-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #0077cc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.modal a.modal-link:hover {
+  background: #005fa3;
+}
+
+/* ---------hub button------------------ */
+.con-butt {
+    border-radius: 8px;
+    margin-left: 15rem;
+    padding: 0.5rem;
+    
+}
+
+@media (min-width: 48rem) {
+    .site-header {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+    
+    .menu-butt {
+        display: none;  /* hide hamburger on larger screens */
+    }
+    
+    .navigation {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        box-shadow: none;
+    }
+
+     #hubsContainer .card {
+    grid-template-areas:
+      "pic name"
+      "pic city country"
+      "pic focus"
+      "pic details";
+    align-items: start;
+  }
+
+     #hubsContainer .card img {
+    width: 100%;
+    height: auto;
+  }
+
+    .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+    #hubsContainer .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+}

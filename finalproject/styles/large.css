@@ -1,0 +1,48 @@
+@media only screen and (min-width: 64rem) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: end;
+        margin-left: 20rem;
+        gap: 1rem;
+    }
+    .head-banner {
+        width: 30rem;
+    }
+
+    .hero img {
+        height: 30rem;
+    }
+    .menu-butt {
+        display: none;
+    }
+ /* -------main -----banner// hero-statement----- */
+
+    .om {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /*-----Main // hubs page ---------------  */
+
+     #hubsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 1rem;
+  }
+
+   #hubsContainer .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  #hubsContainer .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+
+  .con-butt {
+    margin-left: 60rem;
+  }
+}
