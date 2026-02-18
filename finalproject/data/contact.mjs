@@ -12,7 +12,7 @@ export const contact = [
   },
   {
     name: "Lisa Grandule",
-    image: "images/l-contant.webp",
+    image: "images/l-contact.webp",
     address: "221B Baker Street, Marylebone London NW1 6XE United Kingdom",
     phone: "+44 7700 900123",
     email: "lgradule@xhubafrica.org",
