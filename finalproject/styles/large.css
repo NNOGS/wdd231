@@ -45,4 +45,84 @@
   .con-butt {
     margin-left: 60rem;
   }
+
+/* ----------------contact page------------------------------ */
+.contact-hero h1 {
+    margin-left: 20rem;
+}
+
+.contact-hero img {
+    display: block;
+    margin-left: 3.5rem;
+    width: 64rem;
+    height: 5rem;
+    border-radius: 8px;
+    box-shadow: 2px solid#34084e;
+    padding-bottom: 5px;
+}
+.contact-hero p {
+    font-size: larger;
+    margin-left: 5rem;
+}
+ #contact-content {
+    width: 40rem;
+    display: grid;
+    grid-template-columns:  1fr;
+    float: right;
+    margin-top: -40rem;
+    margin-right: 2rem;
+
+}
+#contact-content .card {
+    height: 8rem
+}
+#contact-content .card {
+  background-color: #bca9c7;
+  border: 1px solid #a9afe4;
+  border-radius: 8px;
+  margin-bottom: 6rem;
+  margin-top: 0;
+  
+
+  display: grid;
+  grid-template-areas:
+  "pic name"
+  "pic address"
+  "pic phone "
+  "pic email"
+  "pic website";
+}
+  #contact-content .card .contact img {
+  grid-area: pic;
+}
+
+#contact-content .card .contact h3 {
+  grid-area: name;
+  width: 50%;
+}
+
+#contact-content .card .contact p {
+  grid-area: address;
+  display: none;
+}
+
+#contact-content .card .contact p {
+  grid-area: phone;
+  display: none;
+}
+
+#contact-content .card .contact p {
+    grid-area: email;
+    display: none;
+}
+
+#contact-content .card .contact a {
+    grid-area: website;
+    display: none;
+}
+
+footer {
+    display: block
+}
+
 }

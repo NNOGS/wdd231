@@ -30,17 +30,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function openModal(hub) {
+  function openModal(contact) {
     contactDetails.innerHTML = `
-      <img src="${hub.image}" alt="${hub.name}" 
+      <img src="${contact.image}" alt="${contact.name}" 
            loading="lazy" 
            style="width:100%; border-radius:6px; margin-bottom:10px;">
-      <h3>${hub.name}</h3>
-      <p>${hub.description}</p>
-      <p><strong>Address:</strong> ${hub.address}</p>
-      <p><strong>Phone:</strong> ${hub.phone}</p>
-      <p><strong>Email:</strong> ${hub.email}</p>
-      <a href="${hub.website}" target="_blank">Visit Our Website</a>
+      <h3>${contact.name}</h3>
+      <p>${contact.description}</p>
+      <p><strong>Address:</strong> ${contact.address}</p>
+      <p><strong>Phone:</strong> ${contact.phone}</p>
+      <p><strong>Email:</strong> ${contact.email}</p>
+      <a href="${contact.website}" target="_blank">Visit Our Website</a>
     `;
 
     modal.style.display = "flex";

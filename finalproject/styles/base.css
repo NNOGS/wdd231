@@ -253,6 +253,10 @@
 }
 
 /* -------------------Contact Us Page----------- */
+.contact-hero img {
+  width: 35rem;
+  height: 15rem;
+}
 .contact-container {
       background-color: #ffffff;
       padding: 2.5rem 3rem;
@@ -317,6 +321,15 @@
       transform: translateY(-2px);
     }
 
+    #contact-content {
+    display: flex;
+    
+}
+
+footer {
+   display: flex;
+   margin: 2rem 2rem 0.5rem;
+}
 @media (min-width: 48rem) {
     .site-header {
         justify-content: flex-start;
