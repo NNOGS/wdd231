@@ -5,6 +5,7 @@ function displayResults() {
 
     const first = params.get("first");
     const last = params.get("last");
+    const orgtitle = params.get("orgtitle");
     const email = params.get("email");
     const phone = params.get("phone");
     const business = params.get("business");
@@ -14,13 +15,14 @@ function displayResults() {
 
 
     resultsDiv.innerHTML = `
-    <p><strong>Name:</strong> ${params.get("first")} ${params.get("last")}</p>
-    <p><strong>Email:</strong> ${params.get("email")}</p>
-    <p><strong>Phone:</strong> ${params.get("phone")}</p>
-    <p><strong>Business:</strong> ${params.get("business")}</p>
-    <p><strong>Membership Level:</strong> ${params.get("membership")}</p>
-    <p><strong>Description:</stron> ${params.get("descriptipn")}</p>
-    <p><strong>Submitted:</strong> ${params.get("timestamp")}</p>
+    <p><strong>Name:</strong> ${first} ${last}</p>
+    <p><strong>Organization Title:</strong> ${orgtitle}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
+    <p><strong>Business:</strong> ${business}</p>
+    <p><strong>Membership Level:</strong> ${membership}</p>
+    <p><strong>Description:</strong> ${description}</p>
+    <p><strong>Submitted:</strong> ${timestamp}</p>
     `;
 }
  

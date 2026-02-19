@@ -58,3 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   displayContact();
 });
+
+const timestamp = document.querySelector("#timestamp");
+timestamp.value = new Date().toISOString();
+
+
+
+// Timestamp
+document.getElementById("timestamp").value = new Date().toISOString();

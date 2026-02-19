@@ -325,7 +325,18 @@
     display: flex;
     
 }
+/* -------------------- form-action------------------ */
 
+#response {
+  border: 1px ;
+  padding: 2rem;
+  background-color: #bca9c7;
+  border-radius: 8px;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+/* ---------------------footer--------------------------- */
 footer {
    display: flex;
    margin: 2rem 2rem 0.5rem;

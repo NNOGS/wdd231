@@ -121,8 +121,14 @@
     display: none;
 }
 
+#response{
+    display: flex;
+    gap: 3rem;
+}
+
 footer {
-    display: block
+    display: block;
+    margin-top: 2rem;
 }
 
 }
