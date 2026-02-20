@@ -20,6 +20,11 @@
 
 }
 
+nav a[aria-current="page"] {
+  background-color: #7c1d1d;
+  color: #fff;
+}
+
 .menu-butt::before {
     content: "☰";
 
